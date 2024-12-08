@@ -1,0 +1,349 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3 {
+    text-align: center;
+    color: #ffffff; /* White color for headings */
+    font-weight: 700; /* Bold for emphasis */
+}
+
+/* Section Styling */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Home Section Styling */
+#home {
+    background-color: #1a1a1a; /* Darker black background for home section */
+    padding-top: 100px;
+}
+
+/* Profile Picture */
+.profile-pic {
+    border-radius: 15%;  /* Slight rounding for elegance */
+    width: 100%;  /* Responsive width */
+    max-width: 550px;  /* Limit the maximum size for larger screens */
+    height: auto;  /* Maintain the aspect ratio */
+    margin-bottom: 20px;
+    border: 4px solid #ffffff; /* White border to make the image stand out */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 900px) {
+    .profile-pic {
+        max-width: 400px;  /* Smaller size for tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .profile-pic {
+        max-width: 300px;  /* Even smaller size for mobile phones */
+    }
+}
+
+
+#skillsChart {
+    max-width: 100%;
+    width: 300px;    /* Set a smaller default width */
+    height: auto;    /* Maintain aspect ratio */
+    margin: 0 auto;  /* Center the chart */
+}
+
+
+
+/* Style for Download Buttons */
+.download {
+    background-color: #ff4d4d; /* Button background color */
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.download a {
+    color: white; /* Text color inside the button */
+    text-decoration: none;
+}
+
+.download:hover {
+    background-color: #ff1a1a; /* Darker red on hover */
+}
+
+.download i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #1a1a1a; /* Dark footer */
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #ff4d4d; /* Red links for contrast */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Work Experience Section */
+.work {
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #1a1a1a; /* Dark background for work section */
+    border-radius: 10px;
+    width: 80%;
+    text-align: left;
+}
+
+.work h3 {
+    color: #ffffff; /* White text for job titles */
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.work h4 {
+    font-size: 1.2em;
+    color: #ff4d4d; /* Bright red for roles */
+    margin-bottom: 10px;
+}
+
+.work p {
+    margin-bottom: 10px;
+    color: #cccccc; /* Lighter grey text for description */
+}
+
+.work ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #ffffff;
+}
+
+.work ul li {
+    margin-bottom: 8px;
+}
+
+/* Navigation Bar */
+nav {
+    text-align: center;
+    background-color: #1a1a1a; /* Dark background for nav */
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #ffffff; /* White text for links */
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff4d4d; /* Bright red on hover */
+    color: white;
+}
+
+/* Styling for Active Link */
+nav ul li a.active {
+    background-color: #cc3333; /* Darker red for active link */
+    color: white;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 600px) {
+    nav ul {
+        display: block;
+        text-align: left;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1.1em;
+        padding: 12px;
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 900px) {
+    nav ul {
+        display: block;
+        text-align: left;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
+
+    nav ul li a {
+        font-size: 1.1em;
+        padding: 12px;
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Desktop and Larger Screens */
+@media screen and (min-width: 901px) {
+    nav ul {
+        display: inline-flex;
+        justify-content: center; /* Center items on large screens */
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
+        padding: 10px 15px;
+    }
+}
+
+/* Contact Section */
+#contact {
+    background-color: #1a1a1a; /* Dark background for contact section */
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+#contact h2 {
+    color: #ff4d4d; /* Bright red for contact title */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    color: #cccccc; /* Lighter grey text */
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+#contact iframe {
+    border: none;
+    max-width: 100%;
+    width: 100%;
+    height: 650px;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    #contact iframe {
+        height: 500px;  /* Adjust for mobile screens */
+    }
+}
+
+/* Contact Details Styling */
+.contact-details {
+    margin-top: 40px;
+    background-color: #000000; /* Black background for contact details */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details h3 {
+    color: #ff4d4d; /* Bright red for the header */
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+.contact-details p {
+    color: #cccccc; /* Lighter grey text */
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.contact-details a {
+    color: #ff4d4d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Links Styling */
+.social-media {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.social-media h3 {
+    color: #ff4d4d; /* Bright red for social media title */
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+.social-media a {
+    margin: 0 15px; /* Space between the icons */
+}
+
+.social-media .social-icon {
+    width: 40px; /* Icon size */
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-media .social-icon:hover {
+    transform: scale(1.1); /* Zoom effect */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    .social-media .social-icon {
+        width: 35px;
+        height: 35px; /* Smaller icons on mobile */
+    }
+
+    .contact-details h3, .social-media h3 {
+        font-size: 1.4em; /* Adjust heading sizes for mobile */
+    }
+}
